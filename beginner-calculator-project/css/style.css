@@ -1,0 +1,30 @@
+body {
+    margin: none;
+    padding: none;
+}
+
+button {
+    border: none;
+    font-size: 3rem;
+    padding: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    filter:opacity(.7)
+}
+
+.bg-black {
+    background-color: #000000;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #d8d9db;
+    color: #000000;
+}
+
+.bg-orange {
+    background-color: #df974c;
+    color: #fff;
+}
