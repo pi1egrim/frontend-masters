@@ -8,6 +8,8 @@ button {
     font-size: 3rem;
     padding: 1em;
     cursor: pointer;
+    width: 100%;
+    height: auto;
 }
 
 button:hover {
@@ -28,3 +30,45 @@ button:hover {
     background-color: #df974c;
     color: #fff;
 }
+
+.calculator {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "input   input   input   input"
+    "edit    edit    edit    operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    "numbers numbers numbers operators"
+    ;
+}
+
+.input-field { 
+    grid-area: input;
+}
+.input-field input {
+    font-size: 3rem;
+}
+
+.edit-container {
+    grid-area: edit;
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers-container {
+    grid-area: numbers;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.operators-container {
+    grid-area: operators;
+}
+
